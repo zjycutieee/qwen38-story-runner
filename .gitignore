@@ -1,0 +1,17 @@
+models/
+runs/
+cache/
+wheelhouse/
+.venv/
+__pycache__/
+*.py[cod]
+*.safetensors
+*.pt
+*.pth
+*.tar
+*.tar.gz
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store

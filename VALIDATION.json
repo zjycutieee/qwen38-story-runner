@@ -1,0 +1,32 @@
+{
+  "at": "2026-10-31T00:10:37.150495+08:00",
+  "status": "passed_cpu_checks",
+  "task_count": 205200,
+  "emotions": 171,
+  "topics": 100,
+  "stories_per_combination": 12,
+  "model_files_size_and_non_weight_hashes_verified": 31,
+  "checked": [
+    "Python AST and shell syntax",
+    "205200 globally unique ordered task IDs",
+    "Prompt and sampling match reviewed27B configuration except removed max_new_tokens",
+    "Single-server --gpu/--gpus plans without output or GPU allocation",
+    "Mocked single/multiple GPU memory admission; GPU selection and duplicate rejection",
+    "EOS padding removal",
+    "Resume after last JSONL batch but before summary: reconstruct final metadata",
+    "No original source-server absolute paths in package",
+    "No three-server partition interface"
+  ],
+  "not_tested": [
+    "Fresh network dependency installation on target server",
+    "Fresh52GiB model download (pinned download manifest and local file checks supplied)",
+    "Uncapped generation or balanced multi-GPU end-to-end GPU run"
+  ],
+  "runtime_reference": {
+    "python": "3.10.12",
+    "torch": "2.7.1+cu126",
+    "transformers": "5.3.0",
+    "triton": "3.3.1"
+  },
+  "production_task_modified": false
+}

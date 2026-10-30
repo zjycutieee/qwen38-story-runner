@@ -1,0 +1,28 @@
+{
+  "emotions": [
+    "angry",
+    "happy",
+    "sad"
+  ],
+  "topics": [
+    "A student receives an unexpected gift from a former teacher",
+    "A friend cancels plans they had made together",
+    "A neighbor's tree falls into someone's yard"
+  ],
+  "samples_per_combination": 12,
+  "base_seed": 42,
+  "enable_thinking": false,
+  "body_token_range": [
+    150,
+    350
+  ],
+  "prompt_template": "Write exactly one short English story, roughly one paragraph and approximately\n150–350 tokens long, based on the following premise.\n\nTopic: {topic}\nThe story should follow a character who is feeling {emotion}.\n\nFormat the output like so:\n<NEW STORY>\n[story text]\n\nThe story must stand alone, with no continuity to any other story.\nUse either first-person narration or third-person narration.\n\nIMPORTANT: You must NEVER use the word '{emotion}' or any direct synonyms of it\nin the story. Instead, convey the emotion ONLY through:\n- The character's actions and behaviors\n- Physical sensations and body language\n- Dialogue and tone of voice\n- Thoughts and internal reactions\n- Situational context and environmental descriptions\n\nThe emotion should be clearly conveyed to the reader through these indirect means,\nbut never explicitly named.\n\nPreserve the core event and the relationships between the people described in\nthe topic. You may add plausible background and details to make the character's\nemotional response natural and coherent, but do not replace the core event\nwith a different one.\n\nOutput exactly one story, preceded by one <NEW STORY> marker.\n\nAfter the central event, the character's dominant emotional response\nmust remain {emotion} through the end of the story. Other feelings may\nappear briefly, but must not replace or resolve the target emotion.\n\nThe final actions, dialogue, or thoughts should clearly convey that\nthe character is still feeling {emotion}, without naming the emotion\nor using its direct synonyms.\n\nEnd naturally once this emotional response is clear. Do not add an\nextra resolution or a reassuring conclusion that changes the emotion.",
+  "generation": {
+    "do_sample": true,
+    "temperature": 0.7,
+    "top_p": 0.8,
+    "top_k": 20,
+    "repetition_penalty": 1.05,
+    "use_cache": true
+  }
+}

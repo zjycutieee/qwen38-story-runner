@@ -1,0 +1,7 @@
+{
+  "repo_id": "Qwen/Qwen3.8-27B",
+  "revision": "1d4bf0f2ff6012fd82039f2fa52739d0dd7c60c0",
+  "total_bytes": 55586113293,
+  "weights_included": false,
+  "manifest_hashes": "Previously verified downloaded model files; all18 weight shards verified SHA256"
+}
